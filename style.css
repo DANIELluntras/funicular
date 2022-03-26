@@ -1,0 +1,313 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: blue;
+  font-family: fantasy;
+}
+.logo {
+  color: rgb(207, 178, 174);
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  font-size: 20px;
+}
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: rgb(218, 206, 248);
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-weight: bold;
+  font-size: 14px;
+}
+.burger {
+  display: none;
+}
+.burger div {
+  width: 25px;
+  height: 5px;
+  background-color: rgb(207, 178, 174);
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    height: 92vh;
+    top: 8vh;
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 1.5s ease-in;
+  }
+
+  .toggle.line1 {
+    transform: rotate(-45deg translate(-5px, 6px));
+  }
+  .toggle.line2 {
+    opacity: 0;
+  }
+  .toggle.line3 {
+    transform: rotate(45deg translate(-5px, 6px));
+  }
+
+  .navlinks li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .dani-grasu {
+    display: none;
+  }
+  .p-p {
+    display: none;
+  }
+}
+
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+}
+/* itisa se safrseste  nav */
+/* ////////////////////////////////////////////////////////////////////////// */
+body {
+  outline: #221835 solid 5px;
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(91, 152, 168),
+    rgb(8, 8, 37)
+  );
+  background-attachment: fixed;
+
+  margin-bottom: 80px;
+}
+.hero {
+  background-image: url("https://static.vecteezy.com/system/resources/previews/002/303/113/large_2x/nft-non-fungible-token-nft-text-nft-logo-non-fungible-token-poster-new-digital-currency-digital-art-transaction-illustration-background-vector.jpg");
+
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.page {
+  font-size: 40px;
+  color: #fff;
+  position: relative;
+  top: 200px;
+  left: 50px;
+  position: relative;
+  text-align: center;
+}
+
+/*   font-size: 30px;
+  color: #fff;
+
+  width: 600px;
+  position: relative;
+  text-decoration: none; */
+
+.p-p {
+  color: rgb(216, 234, 247);
+  text-align: center;
+  position: relative;
+  font-weight: 1900;
+  padding: 250px;
+}
+.navbar {
+  text-align: right;
+  padding: 20px;
+  position: relative;
+}
+/* botton a lilnl 3 website open sea and discord and twitter */
+.fa-discord {
+  font-size: 1rem;
+
+  padding: 1rem 2rem;
+  margin: 2rem 2rem;
+  font-family: fantasy;
+  background-color: #fff;
+  color: #444;
+  border-radius: 9rem;
+  text-align: center;
+
+  border: solid 3px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa-twitter {
+  font-size: 40px;
+  background: #55acee;
+  color: white;
+  padding: 1rem 2rem;
+  margin: 2rem 50rem;
+  font-family: fantasy;
+  background-color: #fff;
+  color: #444;
+  border-radius: 9rem;
+  text-align: center;
+
+  border: solid 3px;
+}
+.opensea {
+  font-size: 1rem;
+
+  padding: 1rem 2rem;
+  margin: 2em 40rem;
+  font-family: fantasy;
+  background-color: #fff;
+  color: #444;
+  border-radius: 9rem;
+  text-align: left;
+
+  border: solid 3px;
+}
+
+.page {
+  color: rgb(17, 8, 8);
+}
+.url {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  padding: 0 rem 8rem;
+  outline: #a59ab9 solid 2px;
+}
+
+.flex a {
+  margin: 2rem;
+}
+.paragrful2 {
+  color: #ced6ff;
+  font-size: 1.2rem;
+  font-family: fantasy;
+  text-align: center;
+  padding: 2rem;
+}
+.h12 {
+  color: #ada0f7;
+  font-size: 2.2rem;
+  font-family: fantasy;
+  text-align: center;
+  padding: 2rem;
+}
+.imagine {
+  font-size: 1rem;
+  text-align: center;
+}
+.ala-de-sub-img {
+  font-size: 1.2rem;
+  font-family: fantasy;
+}
+
+.but3 {
+  font-size: 18spx;
+  background: #55acee;
+  color: white;
+  padding: 0.2rem 8rem;
+  margin: 1rem 30rem;
+  font-family: fantasy;
+  background-color: rgb(32, 2, 2);
+  color: #444;
+  border-radius: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  transition: all 6s;
+  border: solid 1px;
+}
+/* logo discords */
+.dani-grasu {
+  color: #fff;
+  font-family: fantasy;
+}
+.partea-3 {
+  margin: auto;
+  padding: 40px;
+}
+.textu-ala-mic {
+  text-align: center;
+  font-size: 20px;
+  padding: 20px;
+  font-family: system-ui;
+}
+.imagine3 {
+  border-radius: 6.3rem;
+  position: left;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 40%;
+}
+.titilu {
+  text-align: center;
+  font-size: 60px;
+  font-family: fantasy;
+}
+.p7 {
+  font-size: 35px;
+  font-family: impact;
+  color: aliceblue;
+  text-align: right;
+
+  width: 1000px;
+  display: inline-block;
+}
+.btn09 {
+  font-size: 18spx;
+  background: #55acee;
+
+  padding: 0.2rem 11rem;
+  margin: 60rem 65rem;
+  font-family: fantasy;
+
+  color: #444;
+  border-radius: 0.2rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 9px;
+  transition: all 6s;
+  border: solid 1px;
+}

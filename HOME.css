@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: linear-gradient(to right, rgb(8, 2, 14), rgb(58, 68, 158));
+}
+.primuH {
+  color: rgb(225, 245, 250);
+  text-align: center;
+  font-family: fantasy;
+  letter-spacing: 6px;
+
+  font-size: 100px;
+}
+/* img {
+  border-radius: 70rem;
+  width: 400px;
+  height: 400px;
+
+  text-align: center;
+}*/
+.p01 {
+  font-size: 53px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 70px;
+  position: relative;
+  z-index: 2;
+  color: rgb(253, 252, 252);
+  transition: all 1s;
+  font-family: fantasy;
+  top: 50%;
+}
+/* img {
+  border-radius: 70rem;
+  width: 400px;
+  height: 400px;
+  margin: 9em 46rem;
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+img {
+  float: left;
+  width: 33.33%;
+  padding: 1px;
+  margin: 7em;
+  border-radius: 70rem;
+  width: 400px;
+  height: 300px;
+  border-top: 3px solid rgb(20, 2, 2);
+}
+
+/* Clearfix (clear floats) */
+.row:after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.p004 {
+  font-weight: 900;
+  text-align: right;
+  color: rgb(253, 252, 252);
+  font-size: 30px;
+  margin: 20px;
+}
+.p005 {
+  font-weight: 900;
+  text-align: center;
+  color: rgb(253, 252, 252);
+  font-size: 30px;
+}
+p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.but {
+  background-color: aliceblue;
+  font-size: 35px;
+  font-family: impact;
+  font-display: center;
+  position: absolute;
+  margin: 500px;
+}
